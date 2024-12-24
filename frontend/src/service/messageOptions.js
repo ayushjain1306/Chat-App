@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:8000";
+const URL = "https://chat-app-server-psi-three.vercel.app";
 
 async function messageOptions(messageData, type){
     try {

@@ -9,7 +9,7 @@ const SocketProvider = ({ children }) => {
 
     useEffect(() => {
         if (userId){
-            const socketInstance = io("http://localhost:8000");
+            const socketInstance = io("https://chat-app-server-psi-three.vercel.app");
 
             socketInstance.emit("register", userId);
 
