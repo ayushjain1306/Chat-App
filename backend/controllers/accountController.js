@@ -28,7 +28,7 @@ async function performLogin(request, response){
         response.cookie("token", token, {
             httpOnly: true,
             secure: true,
-            sameSite: "strict"
+            sameSite: "none"
         });
 
         return response.status(200).json({
